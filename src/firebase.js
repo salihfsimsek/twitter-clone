@@ -2,13 +2,19 @@ import firebase from 'firebase'
 import 'firebase/database'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCBy_j8TW-1Vp6CM-n14pmpWAuNnd8J8ww",
-    authDomain: "tailwind-exercise.firebaseapp.com",
-    projectId: "tailwind-exercise",
-    storageBucket: "tailwind-exercise.appspot.com",
-    messagingSenderId: "177687970875",
-    appId: "1:177687970875:web:3d55afb5f9f2bb861e081e"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
 };
+console.log(process.env.REACT_APP_API_KEY)
+console.log(process.env.REACT_APP_AUTH_DOMAIN)
+console.log(process.env.REACT_APP_PROJECT_ID)
+console.log(process.env.REACT_APP_STORAGE_BUCKET)
+console.log(process.env.REACT_APP_MESSAGING_SENDER_ID)
+console.log(process.env.REACT_APP_APP_ID)
 
 firebase.initializeApp(firebaseConfig)
 firebase.analytics()

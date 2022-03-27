@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "twitter-clone-12c8b",
+    ".env": "twitter-clone-12c8b"
+  },
+  "targets": {}
+}

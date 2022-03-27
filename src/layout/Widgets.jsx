@@ -16,7 +16,7 @@ const Widgets = () => {
         <Timeline
           dataSource={{
             sourceType: "profile",
-            screenName: "ProfDemirtas",
+            screenName: "TwitterGov",
           }}
           options={{
             height: "550",
